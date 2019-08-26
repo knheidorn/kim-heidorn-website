@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
-import './App.css';
 
-import Toolbar from './components/Toolbar/Toolbar'
-
-class App extends Component {
+class Blog extends Component {
   render() {
     return (
       <div>
-        <Toolbar />
+
       </div>
     )
   }
 }
 
-export default App;
+export default Blog;
