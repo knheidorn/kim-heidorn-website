@@ -1,56 +1,47 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
-import './Toolbar.css'
-
-import About from '../About'
-import Blog from '../Blog'
-import Contact from '../Contact'
-import Home from '../Home'
-import Portfolio from '../Portfolio'
+import About from './About'
+import Blog from './Blog'
+import Contact from './Contact'
+import Home from './Home'
+import Portfolio from './Portfolio'
 
 class Toolbar extends Component {
+
   render() {
     return (
       <Router>
         <div>
           <header className="Toolbar-header">
-            <nav>
-              <div>
+            <nav className="Toolbar-nav">
+              <ul>
                 <NavLink exact activeClassName="Toolbar-link" to="/">
-                  <button className="Toolbar-button">
+                  <li className="Toolbar-li">
                     Home
-                  </button>
+                  </li>
                 </NavLink>
-              </div>
-              <div>
                 <NavLink activeClassName="Toolbar-link" to="/about">
-                  <button className="Toolbar-button">
+                  <li className="Toolbar-li">
                     My Story
-                  </button>
+                  </li>
                 </NavLink>
-              </div>
-              <div>
                 <NavLink activeClassName="Toolbar-link" to="/portfolio">
-                  <button className="Toolbar-button">
+                  <li className="Toolbar-li">
                     My Work
-                  </button>
+                  </li>
                 </NavLink>
-              </div>
-              <div>
                 <NavLink activeClassName="Toolbar-link" to="/blog-posts">
-                  <button className="Toolbar-button">
+                  <li className="Toolbar-li">
                     My Blog
-                  </button>
+                  </li>
                 </NavLink>
-              </div>
-              <div>
                 <NavLink activeClassName="Toolbar-link" to="/contact">
-                  <button className="Toolbar-button">
+                  <li className="Toolbar-li">
                     Say Hello
-                  </button>
+                  </li>
                 </NavLink>
-              </div>
+              </ul>
             </nav>
             <div>
               <Route exact path="/" component={ () =>

@@ -19,6 +19,15 @@
   color: white;
 }
 
+.Toolbar-header {
+  position: fixed;
+  width: 100%;
+  background-color: #282c34;
+  height: 56px;
+  top: 0;
+  left: 0;
+}
+
 .App-link {
   color: #61dafb;
 }
