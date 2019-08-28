@@ -20,18 +20,22 @@ class App extends Component {
     }))
   }
 
+  closeDropdownClickHandler = () => {
+    this.setState({ dropdownOpen: false })
+  }
+
   render() {
-    let dropdown;
     let background;
 
     if (this.state.dropdownOpen) {
-      dropdown = <Dropdown />
-      background = <Background />
+      background = <Background closeDropdown={ this.closeDropdownClickHandler }/>
     }
     return (
       <div className="App">
         <Toolbar dropdownClickHandler={ this.dropdownClickHandler }/>
-        { dropdown }
+        <Dropdown showDropdown={ this.state.dropdownOpen }
+          closeDropdown={ this.closeDropdownClickHandler }
+        />
         { background }
       </div>
     )
