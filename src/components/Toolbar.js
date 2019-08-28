@@ -26,7 +26,7 @@ class Toolbar extends Component {
               <div className="Spacer">
               </div>
               <div>
-                <ToggleButton />
+                <ToggleButton openDropdown={ this.props.dropdownClickHandler }/>
               </div>
               <div className="Toolbar-items">
                 <ul>

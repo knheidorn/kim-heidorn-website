@@ -7,7 +7,6 @@ import Blog from '../Pages/Blog'
 import Contact from '../Pages/Contact'
 import Home from '../Pages/Home'
 import Portfolio from '../Pages/Portfolio'
-import ToggleButton from './ToggleButton'
 
 class Dropdown extends Component {
   render() {
@@ -15,6 +14,11 @@ class Dropdown extends Component {
       <Router>
         <nav className="Dropdown">
           <div>
+            <NavLink exact to="/">
+              <img className="Logo-image"
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--F6gmeFfw--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/144545/68024856-175e-41d4-a5e4-47775ed6b7ad.jpg"
+              />
+            </NavLink>
             <ul>
               <NavLink className="Dropdown-links" activeClassName="Dropdown-links-active" to="/about">
                 <li>
