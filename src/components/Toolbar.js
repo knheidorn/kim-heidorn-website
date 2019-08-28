@@ -6,6 +6,7 @@ import Blog from './Blog'
 import Contact from './Contact'
 import Home from './Home'
 import Portfolio from './Portfolio'
+import ToggleButton from './ToggleButton'
 
 class Toolbar extends Component {
 
@@ -15,33 +16,42 @@ class Toolbar extends Component {
         <div>
           <header className="Toolbar-header">
             <nav className="Toolbar-nav">
-              <ul>
-                <NavLink exact activeClassName="Toolbar-link" to="/">
-                  <li className="Toolbar-li">
+              <div>
+                <ToggleButton />
+              </div>
+              <div>
+                <NavLink exact className="Toolbar-home" activeClassName="Toolbar-home-active" to="/">
+                  <div>
                     Home
-                  </li>
+                  </div>
                 </NavLink>
-                <NavLink activeClassName="Toolbar-link" to="/about">
-                  <li className="Toolbar-li">
-                    My Story
-                  </li>
-                </NavLink>
-                <NavLink activeClassName="Toolbar-link" to="/portfolio">
-                  <li className="Toolbar-li">
-                    My Work
-                  </li>
-                </NavLink>
-                <NavLink activeClassName="Toolbar-link" to="/blog-posts">
-                  <li className="Toolbar-li">
-                    My Blog
-                  </li>
-                </NavLink>
-                <NavLink activeClassName="Toolbar-link" to="/contact">
-                  <li className="Toolbar-li">
-                    Say Hello
-                  </li>
-                </NavLink>
-              </ul>
+              </div>
+              <div className="Spacer">
+              </div>
+              <div className="Toolbar-items">
+                <ul>
+                  <NavLink className="Toolbar-links" activeClassName="Toolbar-links-active" to="/about">
+                    <li>
+                      My Story
+                    </li>
+                  </NavLink>
+                  <NavLink className="Toolbar-links" activeClassName="Toolbar-links-active" to="/portfolio">
+                    <li>
+                      My Work
+                    </li>
+                  </NavLink>
+                  <NavLink className="Toolbar-links" activeClassName="Toolbar-links-active" to="/blog-posts">
+                    <li>
+                      My Blog
+                    </li>
+                  </NavLink>
+                  <NavLink className="Toolbar-links" activeClassName="Toolbar-links-active" to="/contact">
+                    <li>
+                      Say Hello
+                    </li>
+                  </NavLink>
+                </ul>
+              </div>
             </nav>
             <div>
               <Route exact path="/" component={ () =>
