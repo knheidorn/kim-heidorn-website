@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
-import About from './About'
-import Blog from './Blog'
-import Contact from './Contact'
-import Home from './Home'
-import Portfolio from './Portfolio'
-import ToggleButton from './ToggleButton'
+import About from './Pages/About'
+import Blog from './Pages/Blog'
+import Contact from './Pages/Contact'
+import Home from './Pages/Home'
+import Portfolio from './Pages/Portfolio'
+import ToggleButton from './Dropdown/ToggleButton'
 
 class Toolbar extends Component {
 
