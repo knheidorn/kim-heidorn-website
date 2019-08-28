@@ -12,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Toolbar />
         <Dropdown />
+        <Background />
       </div>
     )
   }

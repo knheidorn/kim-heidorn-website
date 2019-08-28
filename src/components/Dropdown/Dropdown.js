@@ -16,22 +16,22 @@ class Dropdown extends Component {
         <nav className="Dropdown">
           <div>
             <ul>
-              <NavLink className="Toolbar-links" activeClassName="Toolbar-links-active" to="/about">
+              <NavLink className="Dropdown-links" activeClassName="Dropdown-links-active" to="/about">
                 <li>
                   My Story
                 </li>
               </NavLink>
-              <NavLink className="Toolbar-links" activeClassName="Toolbar-links-active" to="/portfolio">
+              <NavLink className="Dropdown-links" activeClassName="Dropdown-links-active" to="/portfolio">
                 <li>
                   My Work
                 </li>
               </NavLink>
-              <NavLink className="Toolbar-links" activeClassName="Toolbar-links-active" to="/blog-posts">
+              <NavLink className="Dropdown-links" activeClassName="Dropdown-links-active" to="/blog-posts">
                 <li>
                   My Blog
                 </li>
               </NavLink>
-              <NavLink className="Toolbar-links" activeClassName="Toolbar-links-active" to="/contact">
+              <NavLink className="Dropdown-links" activeClassName="Dropdown-links-active" to="/contact">
                 <li>
                   Say Hello
                 </li>
