@@ -17,9 +17,6 @@ class Toolbar extends Component {
           <header className="Toolbar-header">
             <nav className="Toolbar-nav">
               <div>
-                <ToggleButton />
-              </div>
-              <div>
                 <NavLink exact className="Toolbar-home" activeClassName="Toolbar-home-active" to="/">
                   <div>
                     Home
@@ -27,6 +24,9 @@ class Toolbar extends Component {
                 </NavLink>
               </div>
               <div className="Spacer">
+              </div>
+              <div>
+                <ToggleButton />
               </div>
               <div className="Toolbar-items">
                 <ul>

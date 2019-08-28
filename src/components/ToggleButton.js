@@ -11,8 +11,6 @@ class ToggleButton extends Component {
         </div>
         <div className="Toggle-items">
         </div>
-        <div className="Toggle-items">
-        </div>
       </button>
     )
   }

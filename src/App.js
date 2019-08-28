@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 import './App.css';
 
 import Toolbar from './components/Toolbar'
+import Dropdown from './components/Dropdown'
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <Toolbar />
+        <Dropdown />
       </div>
     )
   }
