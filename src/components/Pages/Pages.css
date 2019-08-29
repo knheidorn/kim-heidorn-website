@@ -1,0 +1,54 @@
+#Linkedin-button {
+  position: fixed;
+  width: 50%;
+  height: 46%;
+  top: 56px;
+  right: -60px;
+  display:table-cell;
+  vertical-align:middle;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  border: none;
+  cursor: pointer;
+  background-color: #0077b5;
+}
+
+#Linkedin-button:focus {
+  outline: none;
+}
+
+#Linked {
+  vertical-align: text-top;
+  text-align: center;
+  margin: 0;
+  font-size: 90vw;
+  font-size: 45vh;
+  color: #ffffff;
+}
+
+#Instagram-button {
+  position: fixed;
+  top: 54%;
+  width: 50%;
+  height: 55%;
+  right: -49px;
+  display:table-cell;
+  vertical-align:middle;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  cursor: pointer;
+  background: black;
+  border: none;
+}
+
+#Instagram-button:focus {
+  outline: none;
+}
+
+#Instagram {
+  vertical-align: text-top;
+  text-align: center;
+  margin: 0;
+}
