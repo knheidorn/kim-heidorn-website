@@ -18,8 +18,8 @@ class Toolbar extends Component {
             <nav className="Toolbar-nav">
               <div>
                 <NavLink exact to="/">
-                  <input className="Logo-image"
-                    type="image"
+                  <img className="Logo-image"
+                    alt="Website Logo"
                     src="https://res.cloudinary.com/practicaldev/image/fetch/s--F6gmeFfw--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/144545/68024856-175e-41d4-a5e4-47775ed6b7ad.jpg"
                   />
                 </NavLink>
