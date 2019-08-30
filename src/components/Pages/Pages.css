@@ -57,17 +57,35 @@
   position: fixed;
   left: 30%;
   width: 25%;
-  height: 100%;
-  clip-path: polygon(0 0, 0% 100%, 38% 42%);
-  background: rgba(61, 61, 61, 0.85);
+  height: 93%;
+  clip-path: polygon(0 0, 0% 100%, 39% 49.5%);
+  background: rgba(61, 61, 61, 0.8);
 }
 
 .Chevon-one {
   position: fixed;
-  left: 35%;
+  left: 44%;
   width: 25%;
   height: 100%;
-  clip-path: polygon(25% 0, 50% 42%, 25% 100%, 0% 100%, 25% 42%, 0% 0%);
+  clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
+  background: rgba(61, 61, 61);
+}
+
+.Chevon-two {
+  position: fixed;
+  left: 37.5%;
+  width: 25%;
+  height: 100%;
+  clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
+  background: rgba(61, 61, 61, 0.95);
+}
+
+.Chevon-three {
+  position: fixed;
+  left: 31%;
+  width: 25%;
+  height: 100%;
+  clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
   background: rgba(61, 61, 61, 0.85);
 }
 
@@ -75,7 +93,7 @@
   position: fixed;
   width: 30%;
   height: 100%;
-  background: rgba(61, 61, 61, 0.85);
+  background: rgba(61, 61, 61, 0.8);
   z-index: 100;
   top: 56px;
   left: 0;

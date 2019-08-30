@@ -46,6 +46,8 @@ class Home extends Component {
           </div>
           <div className="Chevon-two">
           </div>
+          <div className="Chevon-three">
+          </div>
         </div>
       </div>
     )
