@@ -31,6 +31,21 @@ class Home extends Component {
               alt="InstagramLink"
               src="https://brandpalettes.com/wp-content/uploads/2018/10/Instagram.png"/>
           </button>
+          <div id="Text-box-div">
+            <p className="Text-home">
+              Hello, World!
+            </p>
+            <p className="Text-name-line">
+              My name is Kim.
+              <span id="Text-line">|</span>
+            </p>
+          </div>
+          <div className="Arrow-right">
+          </div>
+          <div className="Chevon-one">
+          </div>
+          <div className="Chevon-two">
+          </div>
         </div>
       </div>
     )

@@ -53,6 +53,51 @@
   margin: 0;
 }
 
-.Container-type {
-  background-color: #2b2b2b;
+.Arrow-right {
+  position: fixed;
+  left: 30%;
+  width: 25%;
+  height: 100%;
+  clip-path: polygon(0 0, 0% 100%, 38% 42%);
+  background: rgba(61, 61, 61, 0.85);
 }
+
+.Chevon-one {
+  position: fixed;
+  left: 35%;
+  width: 25%;
+  height: 100%;
+  clip-path: polygon(25% 0, 50% 42%, 25% 100%, 0% 100%, 25% 42%, 0% 0%);
+  background: rgba(61, 61, 61, 0.85);
+}
+
+#Text-box-div {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  background: rgba(61, 61, 61, 0.85);
+  z-index: 100;
+  top: 56px;
+  left: 0;
+  color: white;
+}
+
+.Text-home-line {
+  font: bold 300% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 16.5em;
+	width: 21ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation:
+    typing 7s steps(21, end),
+	  blink-caret .5s step-end infinite alternate;
+}
+
+#Text-line {
+  animation: blink 1s infinite;
+}
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
