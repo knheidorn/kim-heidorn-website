@@ -8,8 +8,8 @@ class Home extends Component {
     window.open("https://www.linkedin.com/in/kimheidorn/")
   }
 
-  openInstagram = () => {
-    window.open("https://www.instagram.com/kimesthetic/")
+  openGitHub = () => {
+    window.open("https://github.com/knheidorn")
   }
 
   render() {
@@ -22,14 +22,14 @@ class Home extends Component {
           >
             <h1 id="Linked">in</h1>
           </button>
-          <button id="Instagram-button"
-            title="Instagram Link"
-            onClick={ this.openInstagram }
+          <button id="Github-button"
+            title="Github Link"
+            onClick={ this.openGitHub }
           >
             <img
-              id="Instagram"
-              alt="InstagramLink"
-              src="https://brandpalettes.com/wp-content/uploads/2018/10/Instagram.png"/>
+              id="Github"
+              alt="GitHub Link"
+              src="https://i.imgur.com/t3oCRIM.png"/>
           </button>
           <div id="Text-box-div">
             <p className="Text-home">
@@ -40,15 +40,13 @@ class Home extends Component {
               <span id="Text-line">|</span>
             </p>
           </div>
-          <div className="Arrow-right">
-          </div>
+        </div>
           <div className="Chevon-one">
           </div>
           <div className="Chevon-two">
           </div>
           <div className="Chevon-three">
           </div>
-        </div>
       </div>
     )
   }

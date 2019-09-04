@@ -1,14 +1,12 @@
 #Linkedin-button {
   position: fixed;
-  width: 50%;
-  height: 46%;
+  width: 55%;
+  height: 50%;
   top: 56px;
   right: -60px;
   display:table-cell;
   vertical-align:middle;
-  -webkit-transform: skew(20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
   border: none;
   cursor: pointer;
   background-color: #0077b5;
@@ -27,45 +25,37 @@
   color: #ffffff;
 }
 
-#Instagram-button {
+#Github-button {
   position: fixed;
   top: 54%;
-  width: 50%;
-  height: 55%;
+  width: 55%;
+  height: 50%;
   right: -49px;
   display: table-cell;
   vertical-align: top;
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
   cursor: pointer;
   background: black;
   border: none;
 }
 
-#Instagram-button:focus {
+#Github-button:focus {
   outline: none;
 }
 
-#Instagram {
+#Github {
   vertical-align: text-top;
   text-align: center;
   margin: 0;
-}
-
-.Arrow-right {
-  position: fixed;
-  left: 30%;
-  width: 25%;
-  height: 93%;
-  clip-path: polygon(0 0, 0% 100%, 39% 49.5%);
-  background: rgba(61, 61, 61, 0.8);
+  width: 200px;
+  height: 200px;
 }
 
 .Chevon-one {
   position: fixed;
-  left: 44%;
-  width: 25%;
+  left: 45.5%;
+  top: 56px;
+  width: 27%;
   height: 100%;
   clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
   background: rgba(61, 61, 61);
@@ -73,8 +63,9 @@
 
 .Chevon-two {
   position: fixed;
-  left: 37.5%;
-  width: 25%;
+  left: 38.5%;
+  top: 56px;
+  width: 27%;
   height: 100%;
   clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
   background: rgba(61, 61, 61, 0.95);
@@ -82,8 +73,9 @@
 
 .Chevon-three {
   position: fixed;
-  left: 31%;
-  width: 25%;
+  left: 31.5%;
+  top: 56px;
+  width: 27%;
   height: 100%;
   clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
   background: rgba(61, 61, 61, 0.85);
@@ -91,12 +83,13 @@
 
 #Text-box-div {
   position: fixed;
-  width: 30%;
+  width: 40%;
   height: 100%;
   background: rgba(61, 61, 61, 0.8);
   z-index: 100;
   top: 56px;
   left: 0;
+  clip-path: polygon(0% 0%, 75% 0, 98% 46%, 75% 100%, 0% 100%);
   color: white;
 }
 
@@ -115,6 +108,108 @@
 
 #Text-line {
   animation: blink 1s infinite;
+}
+
+@media (max-width: 321px) {
+  #Linkedin-button {
+    clip-path: polygon(3% 0, 100% 0%, 100% 95%, 20% 95%);
+  }
+
+  #Linked {
+    font-size: 17vh;
+  }
+
+  #Github-button {
+    clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  #Text-box-div {
+    width: 57%;
+    clip-path: polygon(0% 0%, 81% 0, 98% 50%, 71% 100%, 0% 100%);
+  }
+
+  .Chevon-one {
+    display: none;
+  }
+
+  .Chevon-two {
+    left: 58%;
+    width: 40%;
+    clip-path: polygon(29% 0, 53% 50%, 16% 100%, -3% 100%, 37% 50%, 13% 0%);
+  }
+
+  .Chevon-three {
+    left: 42.5%;
+    width: 40%;
+    clip-path: polygon(29% 0, 53% 50%, 16% 100%, -3% 100%, 37% 50%, 13% 0%);
+  }
+}
+
+@media (max-width: 415px) {
+  #Linkedin-button {
+    clip-path: polygon(3% 0, 100% 0%, 100% 95%, 20% 95%);
+  }
+
+  #Linked {
+    font-size: 17vh;
+  }
+
+  #Github-button {
+    clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  #Text-box-div {
+    width: 57%;
+    clip-path: polygon(0% 0%, 81% 0, 98% 47%, 71% 100%, 0% 100%);
+  }
+
+  .Chevon-one {
+    display: none;
+  }
+
+  .Chevon-two {
+    left: 58%;
+    width: 40%;
+    clip-path: polygon(29% 0, 53% 47%, 16% 100%, -3% 100%, 37% 47%, 13% 0%);
+  }
+
+  .Chevon-three {
+    left: 42.5%;
+    width: 40%;
+    clip-path: polygon(29% 0, 53% 47%, 16% 100%, -3% 100%, 37% 47%, 13% 0%);
+  }
+}
+
+@media (max-width: 1024px) {
+  #Linkedin-button {
+    clip-path: polygon(3% 0, 100% 0%, 100% 100%, 30% 100%);
+  }
+
+  #Github-button {
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  #Text-box-div {
+    width: 52%;
+    clip-path: polygon(0% 0%, 78% 0, 100% 47%, 70% 100%, 0% 100%);
+  }
+
+
+  .Chevon-one {
+    display: none;
+  }
+
+  .Chevon-two {
+    left: 47%;
+    width: 42%;
+    clip-path: polygon(29% 0, 53% 47%, 22% 100%, 6% 100%, 37% 47%, 13% 0%);
+  }
+
+  .Chevon-three {
+    left: 38%;
+    width: 42%;
+    clip-path: polygon(29% 0, 53% 47%, 22% 100%, 6% 100%, 37% 47%, 13% 0%);
+  }
 }
 
 @-webkit-keyframes typing { from { width: 0; } }
