@@ -140,12 +140,46 @@
   width: 100%;
   left: 0;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-#Text-body-about {
+#Text-body-about-1 {
+  position: absolute;
+  top: 38%;
+  width: 95%;
+  left: 2.5%;
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
 
+#Text-body-about-2 {
+  position: absolute;
+  top: 14%;
+  width: 75%;
+  text-align: center;
+  font-size: 1.75rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#Text-body-about-3 {
+  position: absolute;
+  top: 53%;
+  width: 82%;
+  right: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#Text-body-about-4 {
+  position: absolute;
+  top: 68%;
+  width: 88%;
+  text-align: center;
+  font-size: 1.65rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 @media (max-width: 321px) {

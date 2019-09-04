@@ -10,7 +10,10 @@ class About extends Component {
         />
         <div className="About-text-field">
           <p id="Title-about">Hello!</p>
-          <p id="Text-body-about"> </p>
+          <p id="Text-body-about-1">I am a <strong>Software Engineer</strong>.</p>
+          <p id="Text-body-about-2">I use to be a <strong>HR Manager</strong>.</p>
+          <p id="Text-body-about-3">I am a proud <strong>Dog Mom</strong>.</p>
+          <p id="Text-body-about-4">I use to be a <strong>Operations Manager</strong>.</p>
         </div>
       </div>
     )
