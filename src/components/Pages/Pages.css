@@ -142,6 +142,8 @@
   text-align: center;
   font-size: 3.8rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  animation-name: fadeIn;
+  animation-duration: 3s;
 }
 
 #Text-body-about-1 {
@@ -152,6 +154,10 @@
   text-align: center;
   font-size: 2.3rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  animation-name: fadeIn;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-fill-mode: both;
 }
 
 #Text-body-about-2 {
@@ -161,6 +167,10 @@
   text-align: center;
   font-size: 1.75rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  opacity: 0;
+  animation-name: fadeInOut;
+  animation-delay: 3s;
+  animation-duration: 3s;
 }
 
 #Text-body-about-3 {
@@ -171,6 +181,10 @@
   text-align: center;
   font-size: 2rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  opacity: 0;
+  animation-name: fadeInOut;
+  animation-delay: 5s;
+  animation-duration: 3s;
 }
 
 #Text-body-about-4 {
@@ -180,6 +194,10 @@
   text-align: center;
   font-size: 1.65rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  opacity: 0;
+  animation-name: fadeInOut;
+  animation-delay: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @media (max-width: 321px) {
@@ -281,6 +299,34 @@
     left: 38%;
     width: 42%;
     clip-path: polygon(29% 0, 53% 47%, 22% 100%, 6% 100%, 37% 47%, 13% 0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
   }
 }
 

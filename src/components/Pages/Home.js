@@ -4,27 +4,19 @@ import './Pages.css'
 
 class Home extends Component {
 
-  openLinkedIn = () => {
-    window.open("https://www.linkedin.com/in/kimheidorn/")
-  }
-
-  openGitHub = () => {
-    window.open("https://github.com/knheidorn")
-  }
-
   render() {
     return (
       <div>
         <div id="Top-right">
           <button id="Linkedin-button"
             title="LinkedIn Link"
-            onClick={ this.openLinkedIn }
+            onClick={ this.props.openLinkedIn }
           >
             <h1 id="Linked">in</h1>
           </button>
           <button id="Github-button"
             title="Github Link"
-            onClick={ this.openGitHub }
+            onClick={ this.props.openGitHub }
           >
             <img
               id="Github"

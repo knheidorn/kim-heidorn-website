@@ -6,7 +6,7 @@
 .Toolbar-header {
   position: fixed;
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: rgba(248, 248, 248, 0.85);
   height: 56px;
   top: 0;
   left: 0;

@@ -24,6 +24,14 @@ class App extends Component {
     this.setState({ dropdownOpen: false })
   }
 
+  openLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/kimheidorn/")
+  }
+
+  openGitHub = () => {
+    window.open("https://github.com/knheidorn")
+  }
+
   render() {
     let background;
 
@@ -32,9 +40,14 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <Toolbar dropdownClickHandler={ this.dropdownClickHandler }/>
+        <Toolbar dropdownClickHandler={ this.dropdownClickHandler }
+          openLinkedIn={ this.openLinkedIn }
+          openGitHub={ this.openGitHub }
+        />
         <Dropdown showDropdown={ this.state.dropdownOpen }
           closeDropdown={ this.closeDropdownClickHandler }
+          openLinkedIn={ this.openLinkedIn }
+          openGitHub={ this.openGitHub }
         />
         { background }
       </div>

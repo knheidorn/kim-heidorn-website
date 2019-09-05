@@ -11,9 +11,20 @@ class About extends Component {
         <div className="About-text-field">
           <p id="Title-about">Hello!</p>
           <p id="Text-body-about-1">I am a <strong>Software Engineer</strong>.</p>
-          <p id="Text-body-about-2">I use to be a <strong>HR Manager</strong>.</p>
+          <p id="Text-body-about-2">I have been a <strong>HR Manager</strong>.</p>
           <p id="Text-body-about-3">I am a proud <strong>Dog Mom</strong>.</p>
-          <p id="Text-body-about-4">I use to be a <strong>Operations Manager</strong>.</p>
+          <p id="Text-body-about-4">I was an <strong>Operations Manager</strong>.</p>
+          <p id="Text-body-about-5">
+            <img src=""
+              className="About-icons"
+              alt="LinkedIn Icon"
+              onClick={ this.props.openLinkedIn }
+            />
+            <img src="" alt="GitHub Icon"
+              className="About-icons"
+              onClick={ this.props.openGitHub }
+            />
+          </p>
         </div>
       </div>
     )
