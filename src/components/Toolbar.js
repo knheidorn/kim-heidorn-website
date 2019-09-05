@@ -59,7 +59,10 @@ class Toolbar extends Component {
                 <Home />
               }/>
               <Route path="/about" component={ () =>
-                <About />
+                <About openGitHub={ this.props.openGitHub }
+                  openLinkedIn={ this.props.openLinkedIn }
+                  openInstagram={ this.props.openInstagram }
+                />
               }/>
               <Route path="/portfolio" component={ () =>
                 <Portfolio />

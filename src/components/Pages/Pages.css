@@ -143,7 +143,7 @@
   font-size: 3.8rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   animation-name: fadeIn;
-  animation-duration: 3s;
+  animation-duration: 6s;
 }
 
 #Text-body-about-1 {
@@ -155,8 +155,8 @@
   font-size: 2.3rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   animation-name: fadeIn;
-  animation-delay: 7s;
-  animation-duration: 4s;
+  animation-delay: 10s;
+  animation-duration: 6s;
   animation-fill-mode: both;
 }
 
@@ -169,8 +169,8 @@
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   opacity: 0;
   animation-name: fadeInOut;
-  animation-delay: 3s;
-  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-duration: 4s;
 }
 
 #Text-body-about-3 {
@@ -183,8 +183,8 @@
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   opacity: 0;
   animation-name: fadeInOut;
-  animation-delay: 5s;
-  animation-duration: 3s;
+  animation-delay: 7.5s;
+  animation-duration: 4s;
 }
 
 #Text-body-about-4 {
@@ -196,8 +196,31 @@
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   opacity: 0;
   animation-name: fadeInOut;
-  animation-delay: 1.5s;
-  animation-duration: 2.5s;
+  animation-delay: 2.5s;
+  animation-duration: 4s;
+}
+
+.About-icons {
+  width: 40px;
+  height: 40px;
+  padding: 0 1rem;
+  animation-name: fadeIn;
+  animation-delay: 12.5s;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+.About-icons:hover {
+  cursor: pointer;
+}
+
+#Text-body-about-5 {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  top: 78%;
+  width: 50%;
+  font-size: 3.5rem;
 }
 
 @media (max-width: 321px) {

@@ -32,6 +32,10 @@ class App extends Component {
     window.open("https://github.com/knheidorn")
   }
 
+  openInstagram = () => {
+    window.open("https://www.instagram.com/kimesthetic/")
+  }
+
   render() {
     let background;
 
@@ -43,11 +47,13 @@ class App extends Component {
         <Toolbar dropdownClickHandler={ this.dropdownClickHandler }
           openLinkedIn={ this.openLinkedIn }
           openGitHub={ this.openGitHub }
+          openInstagram={ this.openInstagram }
         />
         <Dropdown showDropdown={ this.state.dropdownOpen }
           closeDropdown={ this.closeDropdownClickHandler }
           openLinkedIn={ this.openLinkedIn }
           openGitHub={ this.openGitHub }
+          openInstagram={ this.openInstagram }
         />
         { background }
       </div>
