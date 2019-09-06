@@ -3,13 +3,23 @@
   width: 55%;
   height: 50%;
   top: 56px;
-  right: -60px;
+  right: -55%;
   display:table-cell;
   vertical-align:middle;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
   border: none;
   cursor: pointer;
   background-color: #0077b5;
+  transition: width 1s;
+  transition-timing-function: ease-in-out;
+  animation-name: Slide-right;
+  animation-delay: 1s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#Linkedin-button:hover {
+  width: 65%;
 }
 
 #Linkedin-button:focus {
@@ -30,13 +40,23 @@
   top: 54%;
   width: 55%;
   height: 50%;
-  right: -49px;
+  right: -55%;
   display: table-cell;
   vertical-align: top;
   clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
   cursor: pointer;
   background: black;
   border: none;
+  transition: width 1s;
+  transition-timing-function: ease-in-out;
+  animation-name: Slide-right;
+  animation-delay: 1.5s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#Github-button:hover {
+  width: 65%;
 }
 
 #Github-button:focus {
@@ -53,32 +73,41 @@
 
 .Chevon-one {
   position: fixed;
-  left: 45.5%;
+  left: -55%;
   top: 56px;
   width: 27%;
   height: 100%;
   clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
   background: rgba(61, 61, 61);
+  animation-name: Slide-left-1;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 .Chevon-two {
   position: fixed;
-  left: 38.5%;
+  left: -55%;
   top: 56px;
   width: 27%;
   height: 100%;
   clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
   background: rgba(61, 61, 61, 0.95);
+  animation-name: Slide-left-2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 .Chevon-three {
   position: fixed;
-  left: 31.5%;
+  left: -55%;
   top: 56px;
   width: 27%;
   height: 100%;
   clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
   background: rgba(61, 61, 61, 0.85);
+  animation-name: Slide-left-3;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 #Text-box-div {
@@ -88,9 +117,12 @@
   background: rgba(61, 61, 61, 0.8);
   z-index: 100;
   top: 56px;
-  left: 0;
+  left: -55%;
   clip-path: polygon(0% 0%, 75% 0, 98% 46%, 75% 100%, 0% 100%);
   color: white;
+  animation-name: Slide-left-4;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 .Text-home-line {
@@ -101,13 +133,14 @@
 	margin: 2em 1em;
 	white-space: nowrap;
 	overflow: hidden;
-	-webkit-animation:
+	keyframes:
     typing 7s steps(21, end),
 	  blink-caret .5s step-end infinite alternate;
 }
 
 #Text-line {
-  animation: blink 1s infinite;
+  animation-name: Blink;
+  animation-duration: 1s infinite;
 }
 
 .About-page {
@@ -121,6 +154,8 @@
   width: 50%;
   top: 56px;
   left: 0;
+  animation-name: Fade-in;
+  animation-duration: 2s;
 }
 
 #Pool-photo {
@@ -132,6 +167,8 @@
   border-style: ridge;
   border-width: 2px;
   border-color: black;
+  animation-name: Fade-in;
+  animation-duration: 2s;
 }
 
 #Title-about {
@@ -142,7 +179,7 @@
   text-align: center;
   font-size: 3.8rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  animation-name: fadeIn;
+  animation-name: Fade-in;
   animation-duration: 6s;
 }
 
@@ -154,7 +191,7 @@
   text-align: center;
   font-size: 2.3rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  animation-name: fadeIn;
+  animation-name: Fade-in;
   animation-delay: 10s;
   animation-duration: 6s;
   animation-fill-mode: both;
@@ -168,7 +205,7 @@
   font-size: 1.75rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   opacity: 0;
-  animation-name: fadeInOut;
+  animation-name: Fade-in-out;
   animation-delay: 5s;
   animation-duration: 4s;
 }
@@ -182,7 +219,7 @@
   font-size: 2rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   opacity: 0;
-  animation-name: fadeInOut;
+  animation-name: Fade-in-out;
   animation-delay: 7.5s;
   animation-duration: 4s;
 }
@@ -195,7 +232,7 @@
   font-size: 1.65rem;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   opacity: 0;
-  animation-name: fadeInOut;
+  animation-name: Fade-in-out;
   animation-delay: 2.5s;
   animation-duration: 4s;
 }
@@ -204,7 +241,7 @@
   width: 40px;
   height: 40px;
   padding: 0 1rem;
-  animation-name: fadeIn;
+  animation-name: Fade-in;
   animation-delay: 12.5s;
   animation-duration: 4s;
   animation-fill-mode: both;
@@ -325,7 +362,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes Fade-in {
   0% {
     opacity: 0;
   }
@@ -339,7 +376,7 @@
   }
 }
 
-@keyframes fadeInOut {
+@keyframes Fade-in-out {
   0% {
     opacity: 0;
   }
@@ -349,9 +386,48 @@
   }
 
   100% {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
-@-webkit-keyframes typing { from { width: 0; } }
-@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+@keyframes Slide-right {
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes Slide-left-1 {
+  100% {
+    left: 45.5%;
+  }
+}
+
+@keyframes Slide-left-2 {
+  100% {
+    left: 38.5%;
+  }
+}
+
+@keyframes Slide-left-3 {
+  100% {
+    left: 31.5%;
+  }
+}
+
+@keyframes Slide-left-4 {
+  100% {
+    left: 0;
+  }
+}
+
+/* @keyframes Typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes Blink-caret {
+  50% {
+    border-color: transparent;
+  }
+} */
