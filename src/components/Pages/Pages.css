@@ -71,6 +71,19 @@
   height: 200px;
 }
 
+#Iceland-photo {
+  position: fixed;
+  width: auto;
+  height: 100%;
+  top: 56px;
+  left: 0;
+  border-style: ridge;
+  border-width: 2px;
+  border-color: black;
+  animation-name: Fade-in;
+  animation-duration: 2s;
+}
+
 .Chevon-one {
   position: fixed;
   left: -55%;

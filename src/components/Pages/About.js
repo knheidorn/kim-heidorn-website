@@ -8,6 +8,10 @@ class About extends Component {
   render() {
     return (
       <div>
+        <img id="Iceland-photo"
+          src="https://i.imgur.com/9LcT8uW.png"
+          alt="Kim in Iceland"
+        />
         <div id="Top-right">
           <button id="Linkedin-button"
             title="LinkedIn Link"
@@ -32,8 +36,8 @@ class About extends Component {
             <p className="Text-about-me"
               id="Line-1"
             >
-              After years of working in business administration, I switched careers
-              to a job I found more meaningful -
+              After years of working in business administration, I switched to a career
+              I found more meaningful -
               <strong> Software Engineering</strong>.
             </p>
             <p className="Text-about-me"
