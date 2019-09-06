@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Resume from '../Documents/Resume.pdf'
 
+import './Pages.css'
+
 class Home extends Component {
   render() {
     return (
