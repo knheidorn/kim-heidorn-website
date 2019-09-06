@@ -78,7 +78,7 @@
   width: 27%;
   height: 100%;
   clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
-  background: rgba(61, 61, 61);
+  background: rgba(245, 245, 245);
   animation-name: Slide-left-1;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -91,7 +91,7 @@
   width: 27%;
   height: 100%;
   clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
-  background: rgba(61, 61, 61, 0.95);
+  background: rgba(245, 245, 245, 0.95);
   animation-name: Slide-left-2;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -104,7 +104,7 @@
   width: 27%;
   height: 100%;
   clip-path: polygon(20% 0, 59% 46%, 15% 100%, 0% 100%, 37% 46%, 0% 0%);
-  background: rgba(61, 61, 61, 0.85);
+  background: rgba(245, 245, 245, 0.85);
   animation-name: Slide-left-3;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -114,31 +114,35 @@
   position: fixed;
   width: 40%;
   height: 100%;
-  background: rgba(61, 61, 61, 0.8);
+  background: rgba(245, 245, 245, 0.8);
   z-index: 100;
   top: 56px;
   left: -55%;
   clip-path: polygon(0% 0%, 75% 0, 98% 46%, 75% 100%, 0% 100%);
-  color: white;
+  color: black;
   animation-name: Slide-left-4;
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
 
-.Text-home-line {
-  font: bold 300% Consolas, Monaco, monospace;
-	border-right: .1em solid black;
-	width: 16.5em;
-	width: 21ch;
-	margin: 2em 1em;
-	white-space: nowrap;
-	overflow: hidden;
-	keyframes:
+.Text-name-line {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-align: center;
+  width: 75%
+	/* animation:
     typing 7s steps(21, end),
-	  blink-caret .5s step-end infinite alternate;
+	  blink-caret .5s step-end infinite alternate; */
+}
+
+.Text-about-me {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  width: 65%;
+  text-align: center;
+  margin-left: 25px;
 }
 
 #Text-line {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   animation-name: Blink;
   animation-duration: 1s infinite;
 }
@@ -249,6 +253,27 @@
 
 .About-icons:hover {
   cursor: pointer;
+}
+
+#Resume-button {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 2.5%;
+  padding-top: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  animation-name: Fade-in;
+  animation-delay: 12.5s;
+  animation-duration: 4s;
+  animation-fill-mode: both;
 }
 
 #Text-body-about-5 {

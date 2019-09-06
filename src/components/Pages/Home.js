@@ -1,44 +1,45 @@
 import React, { Component } from 'react';
-
-import './Pages.css'
+import Resume from '../Documents/Resume.pdf'
 
 class Home extends Component {
-
   render() {
     return (
-      <div>
-        <div id="Top-right">
-          <button id="Linkedin-button"
-            title="LinkedIn Link"
-            onClick={ this.props.openLinkedIn }
-          >
-            <h1 id="Linked">in</h1>
-          </button>
-          <button id="Github-button"
-            title="Github Link"
-            onClick={ this.props.openGitHub }
-          >
-            <img
-              id="Github"
-              alt="GitHub Link"
-              src="https://i.imgur.com/t3oCRIM.png"/>
-          </button>
-          <div id="Text-box-div">
-            <p className="Text-home">
-              Hello, World!
-            </p>
-            <p className="Text-name-line">
-              My name is Kim.
-              <span id="Text-line">|</span>
-            </p>
-          </div>
+      <div className="About-page">
+        <img id="Pool-photo"
+          src="https://i.imgur.com/rvzY26z.png"
+          alt="Kim Playing Pool"
+        />
+        <div className="About-text-field">
+          <p id="Title-about">Hello!</p>
+          <p id="Text-body-about-1">I am a <strong>Software Engineer</strong>.</p>
+          <p id="Text-body-about-2">I have been an <strong>HR Manager</strong>.</p>
+          <p id="Text-body-about-3">I am a proud <strong>Dog Mom</strong>.</p>
+          <p id="Text-body-about-4">I was an <strong>Operations Manager</strong>.</p>
+          <p id="Text-body-about-5">
+            <img src="https://i.imgur.com/CHs2IJI.png"
+              className="About-icons"
+              alt="Instagram Icon"
+              onClick={ this.props.openInstagram }
+            />
+            <img src="https://i.imgur.com/IuNIqOk.png"
+              className="About-icons"
+              alt="LinkedIn Icon"
+              onClick={ this.props.openLinkedIn }
+            />
+            <img src="https://i.imgur.com/Rs25HP5.png"
+              alt="GitHub Icon"
+              className="About-icons"
+              onClick={ this.props.openGitHub }
+            />
+            <a id="Resume-button"
+              href={ Resume }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
+          </p>
         </div>
-          <div className="Chevon-one">
-          </div>
-          <div className="Chevon-two">
-          </div>
-          <div className="Chevon-three">
-          </div>
       </div>
     )
   }

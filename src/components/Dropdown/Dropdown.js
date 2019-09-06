@@ -63,12 +63,14 @@ class Dropdown extends Component {
         </nav>
         <div>
           <Route exact path="/" component={ () =>
-            <Home />
+            <Home openGitHub={ this.props.openGitHub }
+              openLinkedIn={ this.props.openLinkedIn }
+              openInstagram={ this.props.openInstagram }
+            />
           }/>
           <Route path="/about" component={ () =>
             <About openGitHub={ this.props.openGitHub }
               openLinkedIn={ this.props.openLinkedIn }
-              openInstagram={ this.props.openInstagram }
             />
           }/>
           <Route path="/portfolio" component={ () =>
