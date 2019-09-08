@@ -8,6 +8,8 @@ import Home from './Pages/Home'
 import Portfolio from './Pages/Portfolio'
 import ToggleButton from './Dropdown/ToggleButton'
 
+import '../App.css'
+
 class Toolbar extends Component {
 
   render() {

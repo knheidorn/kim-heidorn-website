@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Resume from '../Documents/Resume.pdf'
 
-import './Pages.css'
+import './About.css'
 
 class About extends Component {
 
@@ -31,7 +31,7 @@ class About extends Component {
           <div id="Text-box-div">
             <p className="Text-name-line">
               My name is Kim.
-              <span id="Text-line">|</span>
+              <span id="Text-line">&nbsp;</span>
             </p>
             <p className="Text-about-me"
               id="Line-1"

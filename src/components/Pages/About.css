@@ -139,14 +139,25 @@
 }
 
 .Text-name-line {
+  position: relative;
+  float: left;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   text-align: center;
   padding-top: 25%;
   width: 75%;
   font-size: 35px;
-	/* animation:
-    typing 7s steps(21, end),
-	  blink-caret .5s step-end infinite alternate; */
+}
+
+p span {
+  position: absolute;
+  width: 5%;
+  animation-name: Typing;
+  animation-duration: 3s;
+  animation-timing-function: steps(16s);
+  animation-fill-mode: forwards;
+  animation-name: Blinking;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 .Text-about-me {
@@ -223,144 +234,6 @@
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   animation-name: Blink;
   animation-duration: 1s infinite;
-}
-
-.About-page {
-  position: relative;
-}
-
-.About-text-field {
-  position: fixed;
-  background-color: rgba(248, 248, 248, 0.85);
-  height: 100%;
-  width: 50%;
-  top: 56px;
-  left: 0;
-  animation-name: Fade-in;
-  animation-duration: 2s;
-}
-
-#Pool-photo {
-  position: fixed;
-  width: 100%;
-  height: auto;
-  top: 56px;
-  right: 0;
-  border-style: ridge;
-  border-width: 2px;
-  border-color: black;
-  animation-name: Fade-in;
-  animation-duration: 2s;
-}
-
-#Title-about {
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  font-size: 3.8rem;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  animation-name: Fade-in;
-  animation-duration: 6s;
-}
-
-#Text-body-about-1 {
-  position: absolute;
-  top: 38%;
-  width: 95%;
-  left: 2.5%;
-  text-align: center;
-  font-size: 2.3rem;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  animation-name: Fade-in;
-  animation-delay: 10s;
-  animation-duration: 6s;
-  animation-fill-mode: both;
-}
-
-#Text-body-about-2 {
-  position: absolute;
-  top: 14%;
-  width: 75%;
-  text-align: center;
-  font-size: 1.75rem;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  opacity: 0;
-  animation-name: Fade-in-out;
-  animation-delay: 5s;
-  animation-duration: 4s;
-}
-
-#Text-body-about-3 {
-  position: absolute;
-  top: 53%;
-  width: 82%;
-  right: 0;
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  opacity: 0;
-  animation-name: Fade-in-out;
-  animation-delay: 7.5s;
-  animation-duration: 4s;
-}
-
-#Text-body-about-4 {
-  position: absolute;
-  top: 68%;
-  width: 88%;
-  text-align: center;
-  font-size: 1.65rem;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  opacity: 0;
-  animation-name: Fade-in-out;
-  animation-delay: 2.5s;
-  animation-duration: 4s;
-}
-
-.About-icons {
-  width: 40px;
-  height: 40px;
-  padding: 0 1rem;
-  animation-name: Fade-in;
-  animation-delay: 12.5s;
-  animation-duration: 4s;
-  animation-fill-mode: both;
-}
-
-.About-icons:hover {
-  cursor: pointer;
-}
-
-#Resume-button {
-  font-size: 22px;
-  font-weight: bold;
-  background-color: transparent;
-  border-style: solid;
-  border-width: 3px;
-  border-color: black;
-  border-radius: 50%;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  margin-left: 2.5%;
-  padding-top: 5px;
-  padding-left: 2px;
-  padding-right: 2px;
-  animation-name: Fade-in;
-  animation-delay: 12.5s;
-  animation-duration: 4s;
-  animation-fill-mode: both;
-}
-
-#Text-body-about-5 {
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  top: 78%;
-  width: 50%;
-  font-size: 3.5rem;
 }
 
 @media (max-width: 321px) {
@@ -523,14 +396,17 @@
   }
 }
 
-/* @keyframes Typing {
+@keyframes Typing {
   from {
+    width: 100%;
+  }
+  to {
     width: 0;
   }
 }
 
-@keyframes Blink-caret {
+@keyframes Blinking {
   50% {
-    border-color: transparent;
+    border-color: white;
   }
-} */
+}
