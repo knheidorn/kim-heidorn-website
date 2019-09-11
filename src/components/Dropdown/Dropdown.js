@@ -2,11 +2,6 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
 import './Dropdown.css';
-import About from '../Pages/About'
-import Blog from '../Pages/Blog'
-import Contact from '../Pages/Contact'
-import Home from '../Pages/Home'
-import Portfolio from '../Pages/Portfolio'
 
 class Dropdown extends Component {
 
@@ -18,7 +13,6 @@ class Dropdown extends Component {
     }
 
     return (
-      <Router>
         <nav className={ dropdownClasses }>
           <div>
             <NavLink exact to="/"
@@ -61,29 +55,6 @@ class Dropdown extends Component {
             </ul>
           </div>
         </nav>
-        <div>
-          <Route exact path="/" component={ () =>
-            <Home openGitHub={ this.props.openGitHub }
-              openLinkedIn={ this.props.openLinkedIn }
-              openInstagram={ this.props.openInstagram }
-            />
-          }/>
-          <Route path="/about" component={ () =>
-            <About openGitHub={ this.props.openGitHub }
-              openLinkedIn={ this.props.openLinkedIn }
-            />
-          }/>
-          <Route path="/portfolio" component={ () =>
-            <Portfolio />
-          }/>
-          <Route path="/blog-posts" component={ () =>
-            <Blog />
-          }/>
-          <Route path="/contact" component={ () =>
-            <Contact />
-          }/>
-        </div>
-      </Router>
     )
   }
 }
