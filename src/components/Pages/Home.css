@@ -104,9 +104,13 @@
 
 .Home-icons:hover {
   cursor: pointer;
+  width: 43px;
+  height: 43px;
 }
 
 #Resume-button {
+  width: 32px;
+  height: 30px;
   font-size: 22px;
   font-weight: bold;
   background-color: transparent;
@@ -125,6 +129,12 @@
   animation-delay: 12.5s;
   animation-duration: 4s;
   animation-fill-mode: both;
+}
+
+#Resume-button:hover {
+  width: 34px;
+  height: 31px;
+  padding-top: 6px;
 }
 
 #Text-body-home-5 {

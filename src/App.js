@@ -17,7 +17,8 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      dropdownOpen: false
+      dropdownOpen: false,
+      email: "heidorkn@gmail.com"
     }
   }
 
@@ -53,29 +54,22 @@ class App extends Component {
       <Router>
         <div className="App">
           <Toolbar dropdownClickHandler={ this.dropdownClickHandler }
-            openLinkedIn={ this.openLinkedIn }
-            openGitHub={ this.openGitHub }
-            openInstagram={ this.openInstagram }
           />
           <Dropdown showDropdown={ this.state.dropdownOpen }
             closeDropdown={ this.closeDropdownClickHandler }
-            openLinkedIn={ this.openLinkedIn }
-            openGitHub={ this.openGitHub }
-            openInstagram={ this.openInstagram }
           />
           { background }
         </div>
         <div>
           <Switch>
             <Route exact path="/" component={ () =>
-              <Home openGitHub={ this.props.openGitHub }
-                openLinkedIn={ this.props.openLinkedIn }
-                openInstagram={ this.props.openInstagram }/>
+              <Home openLinkedIn={ this.openLinkedIn }
+                openGitHub={ this.openGitHub }
+                openInstagram={ this.openInstagram }
+              />
             }/>
             <Route path="/about" component={ () =>
-              <About openGitHub={ this.props.openGitHub }
-                openLinkedIn={ this.props.openLinkedIn }
-              />
+              <About />
             }/>
             <Route path="/portfolio" component={ () =>
               <Portfolio />
@@ -84,7 +78,10 @@ class App extends Component {
               <Blog />
             }/>
             <Route path="/contact" component={ () =>
-              <Contact />
+              <Contact email={ this.state.email }
+                openLinkedIn={ this.openLinkedIn }
+                openGitHub={ this.openGitHub }
+              />
             }/>
           </Switch>
         </div>

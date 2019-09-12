@@ -13,7 +13,7 @@ class Home extends Component {
         />
         <div className="Home-text-field">
           <p id="Title-home">Hello!</p>
-          <p id="Text-body-home-1">I am a <strong>Software Engineer</strong>.</p>
+          <p id="Text-body-home-1">I am a <strong>Web Developer</strong>.</p>
           <p id="Text-body-home-2">I have been an <strong>HR Manager</strong>.</p>
           <p id="Text-body-home-3">I am a proud <strong>Dog Mom</strong>.</p>
           <p id="Text-body-home-4">I was an <strong>Operations Manager</strong>.</p>
