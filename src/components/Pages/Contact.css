@@ -153,11 +153,13 @@
   position: relative;
   float: left;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: black;
   text-align: center;
   padding-top: 7%;
   margin-left: 7%;
   width: 75%;
   font-size: 55px;
+  text-decoration: none;
 }
 
 p span {
