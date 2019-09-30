@@ -149,7 +149,7 @@
   font-size: 35px;
 }
 
-.Text-line-2 {
+#Text-line-2 {
   position: relative;
   float: left;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -160,6 +160,16 @@
   width: 75%;
   font-size: 55px;
   text-decoration: none;
+}
+
+#Text-line-2:hover, #Text-line-2:active {
+  color: #004dff;
+  font-size: 58px;
+  transition: width 1.5s;
+  transition-timing-function: ease-in-out;
+  animation-name: Swing;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 p span {
@@ -337,6 +347,34 @@ p span {
 @keyframes Slide-left-4 {
   100% {
     left: 0;
+  }
+}
+
+@keyframes Swing
+{
+  15%
+  {
+    transform: translateY(4.5%);
+  }
+  30%
+  {
+    transform: translateY(-4.5%);
+  }
+  50%
+  {
+    transform: translateY(3%);
+  }
+  65%
+  {
+    transform: translateY(-3%);
+  }
+  80%
+  {
+    transform: translateY(1.5%);
+  }
+  100%
+  {
+    transform: translateY(0);
   }
 }
 
