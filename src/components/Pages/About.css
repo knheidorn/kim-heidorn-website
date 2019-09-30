@@ -69,6 +69,38 @@
   animation-duration: 1s infinite;
 }
 
+#Baby-photo {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  width: 50%;
+  height: auto;
+}
+
+#Lewiston-photo {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 50%;
+  height: auto;
+}
+
+#Rafa-photo {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: auto;
+}
+
+#Space-photo {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 50%;
+  height: auto;
+}
+
 @keyframes Fade-in {
   0% {
     opacity: 0;

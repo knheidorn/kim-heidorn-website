@@ -35,6 +35,22 @@ const About = () => {
       >
         Check out my resume
       </a>
+      <img src="https://i.imgur.com/jJI0kEr.jpg"
+        alt="Baby Steeler Photo"
+        id="Baby-photo"
+      />
+      <img src="https://i.imgur.com/QiPyk89.jpg"
+        alt="Lewiston"
+        id="Lewiston-photo"
+      />
+      <img src="https://i.imgur.com/LLphwvY.jpg"
+        alt="Puppy"
+        id="Rafa-photo"
+      />
+      <img src="https://i.imgur.com/SLCbJfs.jpg"
+        alt="Space Party Guests"
+        id="Space-photo"
+      />
     </div>
   )
 }
