@@ -31,7 +31,7 @@ const Contact = (props) => {
             <span id="Text-line">&nbsp;</span>
           </p>
           <a id="Text-line-2"
-            href={ `mailto: ${ props.email }` }
+            href={ `mailto: "heidorkn@gmail.com"` }
           >
             Let's chat!
           </a>

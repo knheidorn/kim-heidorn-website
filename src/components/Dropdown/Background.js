@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Dropdown.css'
 
-const Background = () => {
+const Background = (props) => {
   return (
-    <div className="Background" onClick={ this.props.closeDropdown }>
+    <div className="Background" onClick={ props.closeDropdown }>
     </div>
   )
 }
